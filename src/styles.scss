@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Nunito", sans-serif !important;
+}
+
+$white: #fff;
+
+$theme-colors: (
+  "primary": #0296ff,
+  "secondary": #808080,
+  "success": #09b37a,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #e24534,
+  "light": #f8f9fa,
+  "dark": #343a40,
+);
+
+$btn-border-radius: 1.5rem;
+//change animation
+$btn-transition: all 0.3s ease;
+
+$btn-font-size: 1rem;
+$btn-font-weight: 700;
+$btn-color: $white !important;
+$btn-padding-x: 4rem;
+$btn-padding-y: 0.7rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn {
+  transform: scale(0.97);
+}
+
+.btn:hover {
+  transform: scale(1);
+  background-color: #0070c0 !important;
+  color: #fff !important;
+}
